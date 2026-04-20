@@ -79,7 +79,7 @@ export function ServiceChoiceDialog({ open, onOpenChange, service }: Props) {
               <p className="mt-3 font-display text-2xl">
                 R$ 149,90
                 <span className="ml-1 text-sm text-cream/70">
-                  ou 3x no cartão
+                  em até 3x no cartão
                 </span>
               </p>
               <p className="mt-2 text-sm text-cream/80">

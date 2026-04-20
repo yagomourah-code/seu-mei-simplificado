@@ -178,8 +178,9 @@ function Home() {
               </p>
             </div>
             <h2 className="font-display text-3xl font-bold leading-[1.1] text-cream sm:text-4xl lg:text-[44px]">
-              A maioria dos sites de MEI imita o governo para confundir você.
-              Aqui é o oposto: tudo claro, tudo explicado — e você decide.
+              Estamos aqui para você trabalhar em paz. Cuidamos da burocracia
+              com transparência e honestidade — sem precisar se preocupar
+              com a Receita Federal.
             </h2>
           </div>
 
@@ -198,7 +199,7 @@ function Home() {
               {
                 icon: HeadphonesIcon,
                 title: "Contador de verdade",
-                text: "Atendimento humano com especialistas em MEI. WhatsApp direto, sem robô.",
+                text: "Especialistas em MEI que falam direto com você pelo WhatsApp.",
               },
             ].map(({ icon: Icon, title, text }) => (
               <div
