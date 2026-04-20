@@ -30,14 +30,14 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "mei — Abra sua MEI com clareza, sem enrolação" },
+      { title: "MEI — Sua MEI sem burocracia" },
       {
         name: "description",
         content:
           "Assessoria privada e independente para abrir, alterar, baixar ou declarar sua MEI. Faça sozinho de graça ou com um contador por R$ 149,90.",
       },
       { name: "author", content: "mei" },
-      { property: "og:title", content: "mei — Abra sua MEI com clareza" },
+      { property: "og:title", content: "MEI — Sua MEI sem burocracia" },
       {
         property: "og:description",
         content:
@@ -45,6 +45,12 @@ export const Route = createRootRoute({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "MEI — Sua MEI sem burocracia" },
+      { name: "description", content: "MEI Simplificado offers simplified accounting services for Microentrepreneurs." },
+      { property: "og:description", content: "MEI Simplificado offers simplified accounting services for Microentrepreneurs." },
+      { name: "twitter:description", content: "MEI Simplificado offers simplified accounting services for Microentrepreneurs." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a8a9b66c-699b-4601-b916-fb998d62f488/id-preview-a834f28b--1d51ebf1-2c86-4a8c-8feb-da34b13eb22a.lovable.app-1776651446872.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a8a9b66c-699b-4601-b916-fb998d62f488/id-preview-a834f28b--1d51ebf1-2c86-4a8c-8feb-da34b13eb22a.lovable.app-1776651446872.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
