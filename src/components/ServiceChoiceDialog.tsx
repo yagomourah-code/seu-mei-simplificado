@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
+import { useNavigate } from "@tanstack/react-router";
 
 type Props = {
   open: boolean;
@@ -15,6 +16,16 @@ type Props = {
 };
 
 export function ServiceChoiceDialog({ open, onOpenChange, service }: Props) {
+  const navigate = useNavigate();
+  const isAbrir = (service ?? "").toLowerCase().startsWith("abrir mei");
+
+  const handleContador = () => {
+    onOpenChange(false);
+    if (isAbrir) {
+      navigate({ to: "/abrir-mei" });
+    }
+  };
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-2xl border-border bg-card p-0 overflow-hidden max-h-[90vh] sm:max-h-[85vh] flex flex-col">
@@ -102,7 +113,7 @@ export function ServiceChoiceDialog({ open, onOpenChange, service }: Props) {
               </ul>
               <Button
                 className="mt-6 w-full bg-cream text-[color:var(--color-navy-deep)] hover:bg-cream/90"
-                onClick={() => onOpenChange(false)}
+                onClick={handleContador}
               >
                 Quero o contador
                 <ArrowRight className="ml-1 h-4 w-4" />
