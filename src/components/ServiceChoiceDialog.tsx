@@ -17,8 +17,8 @@ type Props = {
 export function ServiceChoiceDialog({ open, onOpenChange, service }: Props) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-2xl border-border bg-card p-0 overflow-hidden">
-        <div className="p-8 sm:p-10">
+      <DialogContent className="max-w-2xl border-border bg-card p-0 overflow-hidden max-h-[90vh] sm:max-h-[85vh] flex flex-col">
+        <div className="overflow-y-auto p-6 sm:p-10">
           <DialogHeader className="space-y-3 text-left">
             <span
               className="block h-[3px] w-10 rounded-sm"
