@@ -19,7 +19,7 @@ export function MeiLogo({ className = "", size = "md", tone = "navy" }: Props) {
   return (
     <div className={`inline-flex flex-col items-start ${className}`}>
       <span
-        className={`font-display ${sizes.text} ${color} leading-[0.9] lowercase font-medium`}
+        className={`font-display ${sizes.text} ${color} leading-[0.85] lowercase font-black tracking-[-0.05em]`}
       >
         mei
       </span>
