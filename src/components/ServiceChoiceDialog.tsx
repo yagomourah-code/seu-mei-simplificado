@@ -32,8 +32,9 @@ export function ServiceChoiceDialog({ open, onOpenChange, service }: Props) {
               {service ?? "Escolha como prefere seguir"}
             </DialogTitle>
             <DialogDescription className="text-base text-muted-foreground">
-              Você pode fazer sozinho, de graça, no site oficial do governo —
-              ou deixar com um contador especialista. Sem pegadinha.
+              Você pode fazer sozinho pelo site oficial do governo ou deixar
+              com um contador especialista em MEI, que cuida de tudo com
+              segurança para nada dar errado.
             </DialogDescription>
           </DialogHeader>
 
